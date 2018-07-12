@@ -1,0 +1,24 @@
+#ins {
+    border-collapse: collapse;
+    width: 100%;
+    
+}
+
+#ins td, #ins th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+#ins tr:hover {background-color: #ddd;}
+
+
+#ins thead {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #4CAF50;
+    color: white;
+    font-weight: bold;
+}
+
+

@@ -1,0 +1,52 @@
+<table id="ins">
+    <thead>
+        <tr class="naslovna">
+            <td>ID</td>
+            <td>Type</td>
+            <td>Employee ID</td>
+            <td>Status</td>
+            <td>policyNum</td>
+            <td>Comment</td>
+            <td>Updated</td>
+            <td>Created</td>
+            <td>Edit</td>
+            <td>Delete</td>
+            
+
+        </tr>
+    </thead>
+    <tbody>
+            <tr *ngFor="#i of insurances" (click)="onSelect(v)">
+                <td>{{i.id}}</td>
+                <td>{{i.type}}</td>
+                <td>{{i.employeeid}}</td>
+                <td>{{i.status}}</td>
+                <td>{{i.policynum}}</td>
+                <td>{{i.comment}}</td>
+                <td>{{i.updated}}</td>
+                <td>{{i.created}}</td>
+                <td><button type="button" class="btn btn-info btn-md">Edit</button></td>
+                <td><button type="button" class="btn btn-danger btn-md">Delete</button></td>
+            </tr>
+    </tbody>
+</table>
+
+<div>
+    <div>{{sel.id}}</div>
+    <div>{{sel.type}}</div>
+    <div>{{sel.employeeid}}</div>
+    <div>{{sel.status}}</div>
+    <div>{{sel.policynum}}</div>
+    <div>{{sel.comment}}</div>
+    <div>{{sel.updated}}</div>
+    <div>{{sel.created}}</div>
+</div>
+
+<div ng-app="">
+ 
+    <p>Input something in the input box:</p>
+    <p>Name : <input [ngModel]="sel.type" placeholder="Enter name here"></p>
+    <h1>Hello {{name}}</h1>
+    
+</div>
+
