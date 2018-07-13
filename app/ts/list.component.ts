@@ -9,14 +9,4 @@ import { Insurance } from './ind_ins';
 
 })
 
-export class PlaylistComponent{
-   
-    sel: Insurance = new Insurance(1,"Radi NESTO!","","","", "", "", "");
- 
-    onSelect(emp: Insurance){
-        // console.log(JSON.stringify(emp));
- 
-        // alert("Working...")
-        this.sel= emp;
-       }
- }
+export class PlaylistComponent{ }
